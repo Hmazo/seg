@@ -16,6 +16,15 @@ header{
 
 }
 
+header p {
+  text-align: center;
+  font-size: 30px;
+  font-style: oblique;
+  margin-top: 10px 0px;
+
+}
+
+
 ul{
   float: right;
   list-style-type: none;
