@@ -96,7 +96,7 @@ function selectedItems(){
 			para2.appendChild(document.createTextNode(ele[i].value));
 			para2.appendChild(document.createElement("br"));
 			chosenProducts.push(ele[i].value);
-			ele[i].click();
+			
 		}
 	}
 
