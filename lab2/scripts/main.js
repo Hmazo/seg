@@ -70,6 +70,7 @@ function populateListProductChoices(slct1, slct2,slct3) {
 // We build a paragraph to contain the list of selected items, and the total price
 
 function selectedItems(){
+	
 
 	var ele = document.getElementsByName("product");
 	var chosenProducts = [];
@@ -77,20 +78,39 @@ function selectedItems(){
 	var c = document.getElementById('displayCart');
 	c.innerHTML = "";
 
+	var d = document.getElementById('displayCarte');
+	d.innerHTML = "";
+
 	// build list of selected item
 	var para = document.createElement("P");
 	para.innerHTML = "You selected : ";
 	para.appendChild(document.createElement("br"));
+
+	var para2 = document.createElement("P");
+	para2.innerHTML = "You selected : ";
+	para2.appendChild(document.createElement("br"));
 	for (i = 0; i < ele.length; i++) {
 		if (ele[i].checked) {
 			para.appendChild(document.createTextNode(ele[i].value));
 			para.appendChild(document.createElement("br"));
+			para2.appendChild(document.createTextNode(ele[i].value));
+			para2.appendChild(document.createElement("br"));
 			chosenProducts.push(ele[i].value);
+			ele[i].click();
 		}
 	}
 
 	// add paragraph and total price
 	c.appendChild(para);
+	d.appendChild(para2);
+
 	c.appendChild(document.createTextNode("Total Price is " + getTotalPrice(chosenProducts)));
 
+}
+
+function showButton(id){
+	var x = document.getElementById(id);
+  if (x.style.visibility = 'hidden') {
+    x.visibility = 'visible';
+  }
 }

@@ -51,11 +51,15 @@
   border-top: none;
 
 }
+.checkout{
+  visibility: hidden;
+  
+}
 
 footer{
   background-color: #f1f1f1	;
   position: absolute;
   bottom: 0;
   width: 100%;
-  
+
 }
