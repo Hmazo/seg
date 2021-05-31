@@ -110,7 +110,7 @@ function restrictListProducts(prods, restriction, org) {
 		}
 	}
 
-	var sorted = product_names.sort((a, b) => a.price - b.price).reverse();
+	var sorted = product_names.sort((a, b) => a.price - b.price);
 	return sorted;
 }
 
