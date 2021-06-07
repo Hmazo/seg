@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<! This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp>
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+	<script src="https://kit.fontawesome.com/4379a6df45.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+	<header>
+
+		<div class="header">
+
+
+
+
+			<img src="marjane2.png" alt="logo" width="150px">
+
+
+		    <form class="search-container">
+		      <input type="text" placeholder="Search.." name="search">
+
+		    </form>
+
+
+
+		<ul>
+			<li>
+				<a href="#"> <i class="fas fa-user"></i>  <span>Trouver un magasin</span> </a>
+			</li>
+			<li>
+				<a href="#"><i class="fas fa-user"></i>  <span>Mon compte</span></a>
+			</li>
+			<li>
+				<a href="#"> <i class="fas fa-cart-arrow-down"></i> <span>Cart</span> </a>
+			</li>
+
+		</ul>
+		</div>
+	</header>
+
+
+
+
+
+	<div class="grid-container">
+
+	  <div class="item1">
+			<div class="Resultats">
+				<p id="nmbre">300</p>
+				<p class="txt">resultats</p>
+			</div>
+
+			<p class="fil">Filtrer par:</p>
+
+			<div class="Categorie :">
+				<p>Categorie</p>
+				<hr>
+				<label class="container">Produits laitiers
+				  <input id="laitier" type="checkbox" onchange="populateListProductChoices(this.id)">
+				  <span class="checkmark"></span>
+				</label>
+
+				<label class="container">Legumes
+				  <input id="legume" type="checkbox" onchange="populateListProductChoices(this.id)">
+				  <span class="checkmark"></span>
+				</label>
+
+				<label class="container">Fruits
+				  <input id="fruit" type="checkbox" onchange="populateListProductChoices(this.id)">
+				  <span class="checkmark"></span>
+				</label>
+
+				<label class="container">Jus
+				  <input id="jus" type="checkbox" onchange="populateListProductChoices(this.id)">
+				  <span class="checkmark"></span>
+				</label>
+
+			</div>
+			<div class="Categorie :">
+
+				<p>Restriction</p>
+				<hr>
+				<label class="container">Intolérance au lactose
+				  <input id="lactose"type="checkbox" onchange="populateListProductChoices(this.id)">
+				  <span class="checkmark"></span>
+				</label>
+
+				<label class="container">Intolérance au gluten
+				  <input id="gluten" type="checkbox" onchange="populateListProductChoices(this.id)">
+				  <span class="checkmark"></span>
+				</label>
+
+				<label class="container">Allergie aux noix
+				  <input id="noix" type="checkbox" onchange="populateListProductChoices(this.id)">
+				  <span class="checkmark"></span>
+				</label>
+
+				<label class="container">Vegetarian
+				  <input id="vegetarian" type="checkbox" onchange="populateListProductChoices(this.id)">
+				  <span class="checkmark"></span>
+				</label>
+
+			</div>
+
+			<div class="Categorie :">
+				<p>Organique</p>
+				<hr>
+				<label class="container">Oui
+				  <input id="orga" type="checkbox" onchange="populateListProductChoices(this.id)" >
+				  <span class="checkmark"></span>
+				</label>
+
+
+				</label>
+
+
+			</div>
+
+
+			</div>
+	  <div class="item2">
+			<div class="pagination">
+
+					<a href="javascript:prevPage()" id="btn_prev">&laquo;</a>
+
+					<a href="#" id="page" class="active">1</a>
+
+
+				  <a href="javascript:nextPage()" id="btn_next">&raquo</a>
+			</div>
+
+			<div id="product-flex">
+
+			</div>
+		</div>
+	  <div class="item3">
+			<p class="total">Votre panier</p>
+			<div class="panier">
+				<p>Sous total</p>
+				<p class="prix" id ="prixe"> 108$</p>
+				<button type="button" class="btn btn-primary">Allez au panier</button>
+				<hr>
+			</div>
+
+			<div class="panier-flex">
+				<div class="panier_prod">
+						<p id="prod"> 2 x  Pomme</p>
+						<hr>
+				</div>
+
+			</div>
+		</div>
+
+
+
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="scripts/groceries.js"></script>
+<script src="scripts/main.js"></script>
+
+</body>
+</html>
