@@ -99,8 +99,10 @@ function selectedItems(product){
 	proff.innerHTML = product.name;
 
 
+var hre = document.createElement("hr");
 	prof.appendChild(proff);
-	console.log(prof);
+	prof.appendChild(hre);
+	console.log(ele);
 	ele.appendChild(prof);
 
 	var price = document.getElementById("prixe");
