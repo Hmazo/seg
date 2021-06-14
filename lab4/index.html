@@ -6,7 +6,7 @@
 	<link href="styles/style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body class="bg-light">
+<body class="">
 
 
 
@@ -14,26 +14,26 @@
 		<header class="header">
 
 
-			<nav class="navbar  bg-light ">
+			<nav class="navbar   ">
 
 									<img class="logo nav " src="logo.png" alt="" width="70px", height="auto">
-									<p class="name nav text-primary ">Doctor Pet</p>
+									<p class="name nav text-primary textlogo ">Doctor Pet</p>
 
 										<ul class="nav justify-content-end">
 											    <li class="nav-item">
-											      <a class="nav-link text-primary" href="#">A propos</a>
+											      <a class="nav-link text-primary" href="#propos">A propos</a>
 											    </li>
 											    <li class="nav-item">
-											      <a class="nav-link text-primary" href="#">Nos services</a>
+											      <a class="nav-link text-primary" href="#service">Nos services</a>
 											    </li>
 											    <li class="nav-item">
-											      <a class="nav-link text-primary" href="#">Réservation</a>
+											      <a class="nav-link text-primary" href="#Reserver">Réservation</a>
 											    </li>
 											    <li class="nav-item">
-											      <a class="nav-link text-primary " href="#">Notre équipe</a>
+											      <a class="nav-link text-primary " href="#equipe">Notre équipe</a>
 											    </li>
 													<li class="nav-item">
-											      <a class="nav-link text-primary" href="#">FAQ</a>
+											      <a class="nav-link text-primary" href="#faq">FAQ</a>
 											    </li>
                   	</ul>
 
@@ -47,8 +47,13 @@
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 
+		<div class="alert alert-warning alert-dismissible fade show mt-4" role="alert">
+	        En raison de la pandemie, tous les clients doivent prendre un rendez-vous avant de se presenter a nos cliniques. Merci pour votre comprehension!
+	        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+	    </div>
 
-	<div class="propos">
+
+	<div class="propos" id="propos" >
 				<h2 class="text-center">À propos de notre clinique vétérinaire à Ottawa, ON.</h2>
 
 				<div class="texte bg-white ">
@@ -77,7 +82,7 @@
 
 		</div>
 
-		<div class="service bg-light">
+		<div class="service " id="service">
 			<h2 class="text-center">Nos services</h2>
 			<div class="tables border  bg-whites">
 
@@ -129,11 +134,11 @@
 		</div>
 
 
-		<div class="equipe">
+		<div class="equipe" id="equipe">
 			<h2 class="text-center">Notre équipe </h2>
 	<div class="row justify-content-around">
 			<div class="card" style="width: 18rem;">
-					<img src="doctor3.jpg" class="card-img-top" alt="...">
+					<img src="doctor3.jpg" class="card-img-top" alt="..." >
 					<div class="card-body">
 							<p class="card-text">Le Dr <strong> Richard Azzouz </strong> a obtenu son doctorat en médecine vétérinaire à l’Université de Montréal en juin 1989. Il a d’abord fait de la pratique mixte, de 1989 à 2001, soignant principalement des chevaux, des bovins laitiers et de boucherie ainsi que des petits animaux. .</p>
 					</div>
@@ -214,7 +219,7 @@
 							</div>
 					  </div>
 					  <div class="col-12 text-center ">
-					    <button type="submit" class="btn btn-primary">Sign in</button>
+					    <button type="submit" class="btn btn-primary">Reserver</button>
 					  </div>
 					</form>
 
@@ -223,7 +228,7 @@
 		</div>
 
 
-		<div class="faq">
+		<div class="faq" id="faq">
 			<h2 class="text-center">FAQ</h2>
 
 		<div class="accordion" id="accordionExample">

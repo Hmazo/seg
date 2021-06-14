@@ -40,6 +40,7 @@ h2{
 
 .table{
   background-color: white;
+  font-family: Modern, sans-serif;
 }
 
 .propos{
@@ -81,4 +82,15 @@ h2{
    font-size: 20px;
    margin-top : 10px;
    margin-bottom: 30px;
+}
+
+.card{
+  font-family: 'Trebuchet MS', sans-serif;
+}
+img{
+  width: 100%;
+}
+
+body{
+  background-color: #cbf3f0;
 }
