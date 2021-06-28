@@ -22,7 +22,13 @@ h2{
   font-family: Georgia, serif;
 }
 
+header{
+  background-color: #d1f7c6;
+}
 
+a{
+  font-size: 20px;
+}
 .service-table{
   margin: 40px;
 }
@@ -96,4 +102,8 @@ body{
 .accordian-item{
   padding: 0px;
   margin: 0px;
+}
+
+.icone{
+  display: inline;
 }

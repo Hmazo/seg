@@ -1,0 +1,423 @@
+<!-- This file contains a few elements adapted from the online tutoral -->
+<!-- on Bootstrap 4 as found here: https://www.w3schools.com/bootstrap4/default.asp -->
+<!-- as well as JQuery found here: https://www.w3schools.com/jquery/default.asp -->
+
+<!-- Images source: -->
+<!-- The two icons come from this bank of icons: https://icons8.com/icons.  I used the free downloadable ones.-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The head should contain an appropriate title for your site -->
+<head>
+    <title>Module 5 - Lab</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use JQuery as well as JQueryUI library -->
+    <!-- which is built on top of JQuery and offers additional possibilities -->
+    <!-- For example, JQuery UI has a datepicker which is popular and that we can use -->
+    <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/themes/excite-bike/jquery-ui.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <!-- Your own script -->
+    <script src="scripts/service.js"></script>
+    <script src="https://kit.fontawesome.com/4379a6df45.js" crossorigin="anonymous"></script>
+
+    <!-- Your own additional style sheet -->
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+
+
+
+  		<header class="header">
+
+
+  			<nav class="navbar   ">
+
+  									<img class="logo nav " src="logo.png" alt="" width="70px", height="auto">
+  									<p class="name nav text-primary textlogo ">Doctor Pet</p>
+
+  										<ul class="nav justify-content-end">
+  											    <li class="nav-item">
+  											      <a class="nav-link text-primary" href="#propos">A propos</a>
+  											    </li>
+  											    <li class="nav-item">
+  											      <a class="nav-link text-primary" href="#service">Nos services</a>
+  											    </li>
+  											    <li class="nav-item">
+  											      <a class="nav-link text-primary" href="#Reserver">Réservation</a>
+  											    </li>
+  											    <li class="nav-item">
+  											      <a class="nav-link text-primary " href="#equipe">Notre équipe</a>
+  											    </li>
+  													<li class="nav-item">
+  											      <a class="nav-link text-primary" href="#faq">FAQ</a>
+  											    </li>
+                    	</ul>
+
+
+  		</nav>
+
+  	</header>
+
+  	<div class="alert alert-warning alert-dismissible fade show mt-4" role="alert">
+          En raison des restrictions de Covid-19, nous demandons à nos clients de porter un masque en tout temps à l'intérieur de la clinique. Nous apprécions votre coopération!
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+
+  		<div class="alert alert-warning alert-dismissible fade show mt-4" role="alert">
+  	        En raison de la pandemie, tous les clients doivent prendre un rendez-vous avant de se presenter a nos cliniques. Merci pour votre comprehension!
+  	        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  	    </div>
+
+
+  	<div class="propos" id="propos" >
+      <div class="text-center icone">
+
+        <h2 ><i class="fas fa-clinic-medical"></i> &nbsp  À propos de notre clinique vétérinaire à Ottawa, ON.</h2>
+      </div>
+
+
+  				<div class="texte bg-white ">
+  					<p class="propostexte">Bienvenue à la Clinique Vétérinaire Docteur Pet, vos vétérinaires locaux dans le secteur "Centre town" d'Ottawa. Nous sommes fiers de fournir une grande variété
+  					 	de services médicaux vétérinaires pour chiens et chats à Ottawa, Gatineau et les environs!</p>
+  						<h3 class="text-center">Nos locaux</h3>
+
+  						<div class="container text-center adresse">
+  						    <div class="row">
+  						        <div class="col-md-6">
+  						            <p  id="address">374 Friel Ave,<br> Ottawa, ON K1N 7W6<br> (343-202-7896)</p>
+  						        </div>
+  						        <div class="col-md-6">
+  						            <p  id="address">250 Bronson Ave<br>Ottawa, ON K1R 6H8<br> (343-202-5066)</p>
+  						        </div>
+  						    </div>
+  						</div>
+
+
+  				</div>
+
+
+  				</div>
+
+
+
+  		</div>
+
+  		<div class="service " id="service">
+  			<h2 class="text-center"> <i class="fas fa-first-aid"></i> &nbsp &nbsp &nbsp Nos services</h2>
+  			<div class="tables border  bg-whites">
+
+
+  			<table class="table table-hover justify-content-center ">
+  						<thead>
+  							<tr >
+  								<th >Service</th>
+  								<th>Description</th>
+  								<th >Prix</th>
+  								<th ></th>
+  							</tr>
+  						</thead>
+  						<tbody>
+  							<tr >
+  								<td >Chirurgie et anesthésie</td>
+  								<td>Toutes nos interventions chirurgicales sont réalisées par un vétérinaire accompagné d’un technicien en santé animale. L’examen physique et le bilan sanguin, faits avant l’anesthésie, nous permettent d’adapter un protocole unique à chaque patient.</td>
+  								<td >300$</td>
+  								<td class=" buttons"> <a href="#Reserver"><button type="button" class="btn btn-primary">Reserver</button></td>
+  							</tr>
+  							<tr >
+  								<td >Radiographie</td>
+  								<td>Suite à l’examen physique de votre animal, il se peut que le vétérinaire vous recommande la prise de radiographies de certaines parties du corps de votre animal (thorax, abdomen, pattes, etc.).</td>
+  								<td >250$</td>
+  								<td class="col-2 buttons"> <a href="#Reserver"><button type="button" class="btn btn-primary">Reserver</button></td>
+  							</tr>
+  							<tr >
+  								<td>Dentisterie</td>
+  								<td>L’hygiène buccale de votre compagnon est importante. Pour cette raison, des soins dentaires réguliers (détartrage avec polissage) sont recommandés. Ils permettent de réduire les risques d’infection ou de découvrir des dents endommagées pouvant être douloureuses pour votre animal.</td>
+  								<td >175$</td>
+  								<td class="buttons"> <a href="#Reserver"><button type="button" class="btn btn-primary">Reserver</button> </a></td>
+  							</tr>
+  							<tr >
+  								<td>Ostéopathie</td>
+  								<td>Les traitements ostéopathiques sont principalement indiqués en prévention, chez les animaux sportifs et actifs (ex: agilité, cani-cross) ainsi que pour les symptômes aigus ou chroniques d’affections diverses (problèmes locomoteurs, arthrose, troubles de croissance, problèmes gastro-intestinaux, insuffisance rénale, troubles de comportement, problèmes dermatologiques etc).</td>
+  								<td >150$</td>
+  								<td class="buttons"> <a href="#Reserver"><button type="button" class="btn btn-primary">Reserver</button> </a></td>
+  							</tr>
+  							<tr >
+  								<td>Pension</td>
+  								<td>Vous partez en vacances et avez besoin de faire garder votre chat ? La Clinique Vétérinaire Docteur Pet offre un service de pension sécuritaire et confortable pour les chats uniquement. Par mesure préventive, les animaux doivent être à jour dans leurs vaccins et une prévention contre les puces sera faite. </td>
+  								<td >180$</td>
+  								<td class="buttons"> <a href="#Reserver"><button type="button" class="btn btn-primary">Reserver</button> </a></td>
+  							</tr>
+
+  						</tbody>
+  			</table>
+  			</div>
+  		</div>
+
+
+  		<div class="equipe" id="equipe">
+  			<h2 class="text-center">  <i class="fas fa-users"></i> &nbsp &nbsp &nbsp Notre équipe </h2>
+  	<div class="row justify-content-around">
+  			<div class="card" style="width: 18rem;">
+  					<img src="doctor3.jpg" class="card-img-top" alt="..." >
+  					<div class="card-body">
+  							<p class="card-text">Le Dr <strong> Richard Azzouz </strong> a obtenu son doctorat en médecine vétérinaire à l’Université de Montréal en juin 1989. Il a d’abord fait de la pratique mixte, de 1989 à 2001, soignant principalement des chevaux, des bovins laitiers et de boucherie ainsi que des petits animaux. .</p>
+  					</div>
+  			</div>
+  			<div class="card" style="width: 18rem;">
+  					<img src="doctor1.jpg" class="card-img-top" alt="...">
+  					<div class="card-body">
+  							<p class="card-text">Originaire du Nouveau-Brunswick, la Dre <strong> Leona </strong> est titulaire d’un doctorat en médecine vétérinaire de l’Université de Montréal, reçu en 2006. Elle travaille à la Clinique Vétérinaire de Docteur Pet depuis 2007 et aime s’occuper de petits animaux. Au plan professionnel, elle a un intérêt particulier pour la chirurgie, plus précisément en dentisterie.</p>
+  					</div>
+  			</div>
+
+  			<div class="card" style="width: 18rem;">
+  					<img src="doctor2.jpg" class="card-img-top" alt="...">
+  					<div class="card-body">
+  							<p class="card-text">Originaire de St-André-Avellin dans la petite Nation , Dre <strong> Kai'sa </strong> a rêvé toute sa jeunesse de soigner des animaux. Dès l’âge de 3 ans, elle disait déjà à sa mère que plus grande elle serait docteure pour animaux! Après avoir gradué de la Faculté de médecine vétérinaire de l'Université de Montréal en 2009, elle s'établit à Aylmer et rencontre Dre Michaud qui l’invite à se joindre à l'équipe de la Clinique vétérinaire Docteur Pet.</p>
+  					</div>
+  			</div>
+  	</div>
+  		</div>
+
+  		<div class="Reserver " id="Reserver">
+  			<h2 class="text-center"> <i class="fas fa-calendar-alt"></i> &nbsp &nbsp &nbsp Reservation</h2>
+
+  			<div class="bg-white formulaire">
+
+
+  			<form class="row g-3">
+
+  						<div class="alert alert-danger " id="inputerror" role="alert">
+  											<strong>Error:</strong><br><p  id="errorContent"></p>
+  						</div>
+
+  					  <div class="col-md-6">
+  					    <label for="inputfname" class="form-label">Prenom</label>
+  					    <input type="text" class="form-control" id="inputfname" title="Veuillez enter votre Prenom">
+  					  </div>
+
+  					  <div class="col-md-6">
+  					    <label for="inputlname" class="form-label">Nom</label>
+  					    <input type="text" class="form-control" id="inputlname" title="Veuillez enter votre Nom">
+  					  </div>
+
+  						<div class="col-md-6">
+  						    <label for="inputEmail4" class="form-label">Email</label>
+  						    <input type="email" class="form-control" id="inputEmail" title="Veuillez enter votre Email">
+  			  		</div>
+
+  					  <div class="col-6">
+  					    <label for="inputphone" class="form-label">Numero Telephone</label>
+  					    <input type="tel" class="form-control" id="inputphone" placeholder="(XXX) XXX-XXXX "title="Veuillez enter votre Numero de Telephone">
+  					  </div>
+
+  						<div class="col-6">
+  							<label for="inputService">Service</label>
+  					     <select id="inputService" class="form-control">
+  					        <option selected> Choisir un service</option>
+  					        <option>Chirurgie et anesthésie</option>
+  									<option>Radiographie</option>
+  									<option>Dentisterie</option>
+  									<option>Ostéopathie</option>
+  									<option>Pension</option>
+  					      </select>
+  					  </div>
+
+  						<div class="col-6">
+  							<label for="inputService">Experts</label>
+  							 <select id="inputExpert" class="form-control"  >
+
+  									<option selected>Richard Azzouz</option>
+  									<option>Leona</option>
+  									<option>Kai'sa</option>
+  								</select>
+  						</div>
+
+  						<div class="col-6">
+  							<label for="exampleFormControlInput1">Date:</label><br>
+                <input type="text" id="dateInput">
+  					  </div>
+
+  						<div class="col-6">
+  					    <label for="inputphone" class="form-label">Heure</label>
+  					    <input type="time" class="form-control" name="time" id="time" placeholder="Time">
+  					  </div>
+
+  						<div class="col-12">
+  						 <div class="alert alert-warning text-center" id="availability" role="alert">
+
+  						 </div>
+  					 </div>
+
+
+
+  					  <div class="col-12">
+  							<div class="alert alert-warning text-center" role="alert">
+  							  Vous devez confirmer votre rendez-vous 1h avant votre arrivee!
+  							</div>
+  					  </div>
+  					  <div class="col-12 text-center ">
+  					    <button type="button" class="btn btn-primary" onclick="validateInputs()">Reserver</button>
+  					  </div>
+  					</form>
+
+  				</div>
+
+  		</div>
+
+  		<div class="paiement" id="paiement">
+         <h2 class="text-center"> <i class="fab fa-cc-visa"></i> &nbsp &nbsp &nbsp Paiement </h2>
+  			<div class="bg-white formulaire">
+  			<form class="row g-3">
+
+  						<div class="alert alert-danger " id="inputerror1" role="alert">
+  											<strong>Error:</strong><br><p  id="errorContent1"></p>
+  						</div>
+
+
+
+  					  <div class="col-md-6">
+  							<label for="formGroupExampleInput">Nom complet :</label><br>
+  							<input type="text" class="form-control" id="CreditCardName" title="Enter the name in your credit card" ></input>
+  					  </div>
+
+  						<div class="col-md-6">
+  							<label for="formGroupExampleInput">Numero de carte credit :</label><br>
+  							<input type="text" class="form-control"  id="debit" placeholder="4XXX XXXX XXXX XXXX" title="We ask for your credit card (Visa) number in case of no-show, 20$ will be charged."></input>
+  			  		</div>
+
+  						<div class="col-md-6">
+  							<label for="formGroupExampleInput">Date d'expiration </label><br>
+  							<input type="text" class="form-control" id="Expiry" id="dateInput" title="Enter the expiry date of your credit card eg. '01/25'"></input>
+  					  </div>
+
+  					  <div class="col-6">
+  							<label for="formGroupExampleInput">CVV :</label><br>
+  							<input type="text"  class="form-control" id="CVV" title="Enter the 3-digit number in the back of your card"></input>
+  					  </div>
+
+              <div class="col-12">
+  							<div class="alert alert-warning text-center" role="alert">
+  							  Nous acceptons que des cartes Visa pour le moment : (4XXX XXXX XXXX XXXX)
+  							</div>
+  					  </div>
+
+
+
+
+
+  					  <div class="col-12 text-center ">
+  					    <button type="button" onclick="validatePayment()" class="btn btn-primary">Payer</button>
+  					  </div>
+              <div class="col-12">
+                <div class="alert alert-success text-center" id="success" role="alert">
+                  
+                </div>
+              </div>
+  					</form>
+
+  				</div>
+
+
+
+
+
+  		</div>
+
+
+  		<div class="faq" id="faq">
+  			<h2 class="text-center"><i class="fas fa-info-circle"></i> &nbsp &nbsp &nbsp FAQ</h2>
+
+  		<div class="accordion" id="accordionExample">
+
+
+    	<div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          Est-ce qu’il y a des frais d’ouverture de dossier ?
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+        Non, il n’y a aucun frais d’ouverture de dossier.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          À quel âge je dois faire stériliser mon animal ?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+  				Même s’il est tentant de vouloir mettre un âge idéal pour la stérilisation de votre animal, les dernières études montrent que plusieurs facteurs entrent en ligne de compte et que l’âge idéal de la stérilisation varie d’un animal à un autre.  Une recommandation adaptée spécifiquement à votre animal vous sera donnée lors de la consultation.      </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+  				Mon chat a des puces, qu’est-ce que je fais ?
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+  Plusieurs produits, sous une multitude de présentations, sont disponibles pour l’éradication des puces chez les animaux de compagnie.  Il est très important d’être vigilant, car certains produits en vente libre peuvent s’avérer toxiques chez certains animaux !  Contactez votre vétérinaire pour vous guider vers la solution idéale.  Vous verrez que le traitement des puces est maintenant très simple et dans plus 95% des cas, le traitement de l’environnement avec un insecticide n’est plus requis.      </div>
+      </div>
+    </div>
+
+
+
+  	<div class="accordion-item">
+      <h2 class="accordion-header" id="heading4">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+  				Comment m’y prendre pour faire perdre du poids à mon animal ?
+        </button>
+      </h2>
+      <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+  Il faut tout d’abord mettre un place un programme d’exercice régulier et choisir une nourriture adaptée.  Il faut faire attention, car plusieurs nourritures sur le marché qui sont dites ‘’légères’’ sont en fait des nourritures de maintien de poids.  Demandez à votre vétérinaire de vous aider.    </div>
+    </div>
+  	</div>
+
+
+  	<div class="accordion-item">
+      <h2 class="accordion-header" id="heading5">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+  				Je crois que mon chien a des allergies alimentaires, est-ce possible ?
+        </button>
+      </h2>
+      <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+  Tout-à-fait.  Il s’agit d’un problème relativement fréquent qui peut se développer à n’importe quel âge et à n’importe quelle période de la vie de votre animal, même s’il n’y a eu aucun changement alimentaire récent.  Les symptômes sont essentiellement d’ordre cutané tels que démangeaisons, infections de peau ainsi que des otites récidivantes.  Le seul test fiable à l’heure actuelle qui nous permet de diagnostiquer l’allergie alimentaire est l’utilisation d’une diète hypoallergène VÉTÉRINAIRE stricte pour une période de 2 mois (ou de faire une diète cuisinée maison selon les recommandations de votre vétérinaire).  Les diètes hypoallergènes vétérinaires sont les seules qui sont garanties exemptes des allergènes communs.  Ensuite, si l’allergie est confirmée, l’animal devra continuer de s’alimenter avec cette nourriture.  </div>
+
+
+
+
+  </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
